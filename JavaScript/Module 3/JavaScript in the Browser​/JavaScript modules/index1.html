@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 module script</title>
+</head>
+
+<body>
+    js script as modules
+    <script type="module">
+        import { informalGreeting } from './greeting.js'
+        informalGreeting("jane")
+    </script>
+    <script type="module">
+        import { formalGreeting } from './greeting.js'
+        import greeting from './greeting.js'
+        formalGreeting("jhon")
+        greeting()
+    </script>
+</body>
+
+</html>
